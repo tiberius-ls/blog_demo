@@ -20,7 +20,6 @@ export default class extends Controller {
     form.classList.toggle("d-none");
     form.classList.toggle("mt-5");
     commentBody.classList.toggle("d-none");
-    
     this.toggleEditButton(editButton);
   }
 
@@ -36,6 +35,6 @@ export default class extends Controller {
 
   toggleEditButtonClass(editButton) {
     editButton.classList.toggle("btn-secondary");
-    editButton.classList.toggle("btn-info");
+    editButton.classList.toggle("btn-warning");
   }
 }

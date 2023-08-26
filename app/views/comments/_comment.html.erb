@@ -8,7 +8,7 @@
     <% end %>
     <% if current_user == comment.user %>
         <div class="btn-group float-end">
-            <%= link_to "Edit", nil, remote: true, class: "btn btn-info",
+            <%= link_to "Edit", nil, remote: true, class: "btn btn-warning",
             data: {
                 controller: "comments", 
                 action: "comments#toggleForm",
@@ -27,7 +27,7 @@
         </div>
     <% end %>
     <hr />
-    <div id="comment-<%= comment.id %>" class="d-none">
+    <div id="comment-body-<%= comment.id %>">
         <%= comment.body %>
     </div>
 </div>
